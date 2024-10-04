@@ -11,69 +11,37 @@
 </head>
 <body>
     <header class="encabezado">
+        
         <h1 class="titulo">PETS.NET</h1>
         <img src="img/logo.jpeg" alt="logo" width="75" height="75">
-            <nav class="navegador">
-              <input type="text" placeholder="Buscar..." class="buscador">
-              <button class="boton">Buscar</button>
-
-           </nav>
+        <nav class="navegador">
+            <input type="text" placeholder="Buscar..." id="search-input" class="buscador">
+            <button class="boton">Buscar</button>
+        </nav>
     </header>
     <hr>
 
-        
-
-
     <main>
-            <section></section>
-            <h1><strong>indice</strong>
-            </h1>
-            <p>- para adoptar</p>
-            <p>- contactos</p>
-            <p>-acerca de nosotros</p>
-            <section>
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="img/perrito1.jpg" class="d-block w-100"  alt="Imagen 1" width="200px" height="150px">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/perrito2.webp"  class="d-block w-100" alt="Imagen 2" width="200px" height="150px">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/perrito3.jpg"  class="d-block w-100" alt="Imagen 3" width="200px" height="150px">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-
-
-
-            </section>
-   
-            <section></section>
+        <section>
+            <h1><strong>Veterinarias en la zona</strong></h1>
+            <div id="vet-buttons">
+                <button data-localidad="Villa Giardino" class="btn btn-primary">Villa Giardino</button>
+                <button data-localidad="La Cumbre" class="btn btn-primary">La Cumbre</button>
+                <button data-localidad="Capilla del Monte" class="btn btn-primary">Capilla del Monte</button>
+                <button data-localidad="Cosquín" class="btn btn-primary">Cosquín</button>
+                <button data-localidad="La Falda" class="btn btn-primary">La Falda</button>
+            </div>
+        </section>
     </main>
 
-
-    <footer>
-
-        
+    <footer class="d-flex justify-content-between align-items-center p-3">
         <img src="img/logo transparente (1).png" alt="logo proa" width="65" height="65">
-        <a href="https://www.instagram.com/"target="_blank"><img src="img/instagram-logo-instagram-icon-transparent-free-png.webp" alt="cuenta dde ig" width="65" height="65"></a>
-        
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="img/instagram-logo-instagram-icon-transparent-free-png.webp" alt="cuenta de ig" width="65" height="65">
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script> <!-- Añade este script -->
 </body>
 </html>
